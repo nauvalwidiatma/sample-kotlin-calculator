@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:gravity="end"
+        android:padding="24dp"
+        android:text="0"
+        android:textColor="#0F172A"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/Widget.SimpleCalculator.ButtonAccent"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/Widget.SimpleCalculator.ButtonAccent"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/Widget.SimpleCalculator.ButtonAccent"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/Widget.SimpleCalculator.ButtonAccent"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Widget.SimpleCalculator.ButtonAccent"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="6" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="3" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/Widget.SimpleCalculator.ButtonBase"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/Widget.SimpleCalculator.ButtonPrimary"
+            android:text="=" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
